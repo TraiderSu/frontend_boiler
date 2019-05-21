@@ -1,0 +1,37 @@
+---
+syntax: scss
+rules:
+  # https://stylelint.io/user-guide/rules/
+  # Отступы
+  indentation: 2
+  # Максимальное количество пустых строк
+  max-empty-lines: 2
+  # Запрет нескольких точек с запятой подряд
+  no-extra-semicolons: true
+  # Кавычки
+  string-quotes: single
+  # Регистр значений свойств
+  value-keyword-case: lower
+  # Пробел после двоеточия
+  declaration-colon-space-after: always
+  # Пробел перед двоеточием
+  declaration-colon-space-before: never
+  # Перенос строки после открывающей скобки блока
+  block-opening-brace-newline-after: always
+  # Перенос строки перед закрывающей скобкой блока
+  block-closing-brace-newline-before: always
+  # Пробел перед оператором в селекторе
+  selector-combinator-space-before: always
+  # Пробел после оператора в селекторе
+  selector-combinator-space-after: always
+  # Перенос строки перед запятой во множественном селекторе
+  selector-list-comma-newline-before: never-multi-line
+  # Перенос строки после запятой во множественном селекторе
+  # selector-list-comma-newline-after: always-multi-line
+  # Пустая строка перед правилом
+  rule-empty-line-before:
+  - always
+  - except:
+    - first-nested
+  - ignore:
+    - after-comment

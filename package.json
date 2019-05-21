@@ -1,0 +1,57 @@
+{
+  "name": "frontend_boiler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Albert Zamaldinov",
+  "license": "MIT",
+  "seo": {
+    "title": "Бойлерплейт фронтовых проектов",
+    "description": "Это базовый проект для всех остальных проектов",
+    "color": "#ff0000"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --env=dev",
+    "build:dev": "webpack --env=dev --progress",
+    "build:prod": "BABEL_ENV=production webpack --env=prod --progress",
+    "analyze": "webpack --env=analyze --progress"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/plugin-proposal-class-properties": "7.3.0",
+    "@babel/plugin-proposal-decorators": "7.3.0",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-syntax-export-namespace-from": "7.2.0",
+    "@babel/plugin-transform-runtime": "7.2.0",
+    "@babel/preset-env": "7.3.1",
+    "@babel/preset-react": "7.0.0",
+    "@babel/runtime": "7.3.1",
+    "babel-eslint": "10.0.1",
+    "babel-loader": "8.0.5",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.23",
+    "clean-webpack-plugin": "1.0.1",
+    "css-loader": "2.1.0",
+    "eslint": "5.12.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-loader": "2.1.1",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jsx-a11y": "6.2.0",
+    "eslint-plugin-react": "7.12.4",
+    "html-webpack-plugin": "3.2.0",
+    "less": "3.9.0",
+    "less-loader": "4.1.0",
+    "mini-css-extract-plugin": "0.5.0",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
+    "postcss-loader": "3.0.0",
+    "style-loader": "0.23.1",
+    "stylelint": "9.10.1",
+    "stylelint-webpack-plugin": "0.10.5",
+    "svg-sprite-loader": "4.1.3",
+    "webpack": "4.32.0",
+    "webpack-bundle-analyzer": "3.3.2",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "3.4.1"
+  },
+  "dependencies": {
+    "dotenv": "8.0.0"
+  }
+}
