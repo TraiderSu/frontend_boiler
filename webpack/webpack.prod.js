@@ -91,11 +91,11 @@ module.exports = {
       },
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        exclude: /node_modules/,
         loader: 'svg-sprite-loader'
       },
       {
-        test: /\.svg$/,
-        issuer: /\.(less$|js$)/,
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
         use: [
           {
             loader: 'url-loader',
@@ -104,8 +104,7 @@ module.exports = {
               mimetype: 'image/svg+xml'
             }
           }
-        ],
-        exclude: /node_modules/
+        ]
       },
       {
         test: /\.png$/,

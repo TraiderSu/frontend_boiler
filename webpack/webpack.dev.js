@@ -95,7 +95,8 @@ module.exports = {
       },
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'svg-sprite-loader'
+        loader: 'svg-sprite-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.svg$/,
@@ -112,9 +113,8 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.png$/,
-        use: 'file-loader',
-        exclude: /node_modules/
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+        use: 'file-loader'
       }
     ]
   },
