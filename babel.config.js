@@ -13,6 +13,12 @@ module.exports = {
     ]
   ],
   plugins: [
+    [
+      require.resolve('babel-plugin-module-resolver'),
+      {
+        root: ['./src/']
+      }
+    ],
     '@babel/plugin-transform-runtime',
     '@babel/plugin-syntax-dynamic-import',
     '@babel/plugin-syntax-export-namespace-from',

@@ -44,7 +44,7 @@ module.exports = {
     hot: true,
     watchOptions: {
       poll: true
-    },
+    }
   },
   stats,
   module: {
@@ -91,11 +91,11 @@ module.exports = {
               sourceMap: false
             }
           }
-        ],
+        ]
       },
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'svg-sprite-loader',
+        loader: 'svg-sprite-loader'
       },
       {
         test: /\.svg$/,
@@ -131,7 +131,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['static/dist'], {
-      root: path.resolve(),
+      root: path.resolve()
     }),
     new StyleLintPlugin({
       configFile: '.stylelintrc.yaml',

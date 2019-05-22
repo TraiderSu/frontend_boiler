@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -88,11 +87,11 @@ module.exports = {
               sourceMap: false
             }
           }
-        ],
+        ]
       },
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'svg-sprite-loader',
+        loader: 'svg-sprite-loader'
       },
       {
         test: /\.svg$/,
@@ -128,7 +127,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['static/dist'], {
-      root: path.resolve(),
+      root: path.resolve()
     }),
     new HtmlWebpackPlugin({
       chunks: ['app', 'vendors', 'runtime'],
