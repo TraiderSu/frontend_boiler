@@ -44,6 +44,12 @@ module.exports = {
     hot: true,
     watchOptions: {
       poll: true
+    },
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8000',
+        changeOrigin: true
+      }
     }
   },
   stats,

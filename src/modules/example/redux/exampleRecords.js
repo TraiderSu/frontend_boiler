@@ -13,15 +13,15 @@ import { getApiUrl } from 'helpers/urlBuilder';
 import { ModuleName } from 'modules/example';
 import schemas from './schemas';
 
-const API_ENDPOINT = '/v1/example_records';
+const API_ENDPOINT = '/api/v1/example_records';
 const actionTypes = createCrudActionTypes(ModuleName, EXAMPLE_RECORDS);
 const {
   FETCH_LIST, FETCH_ITEM, CREATE_ITEM, CREATE_MULTIPLE_ITEMS, PATCH_ITEM, DELETE_ITEM
 } = actionTypes;
 
-export const exampleRecordList = (params = {}) => fetchEntityList(EXAMPLE_RECORDS, {
+export const fetchExampleRecordList = (params = {}) => fetchEntityList(EXAMPLE_RECORDS, {
   path: API_ENDPOINT,
-  params: { ...params, query: { ...params.query, limit: 25 } },
+  params: { ...params, query: params.query },
   types: FETCH_LIST,
   schema: [schemas[EXAMPLE_RECORDS]],
   meta: {

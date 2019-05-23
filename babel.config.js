@@ -16,7 +16,7 @@ module.exports = {
     [
       require.resolve('babel-plugin-module-resolver'),
       {
-        root: ['./src/']
+        root: ['./src']
       }
     ],
     '@babel/plugin-transform-runtime',
