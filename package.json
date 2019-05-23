@@ -45,6 +45,7 @@
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "postcss-loader": "3.0.0",
     "prop-types": "15.6.2",
+    "redux-devtools-extension": "2.13.8",
     "style-loader": "0.23.1",
     "stylelint": "9.10.1",
     "stylelint-webpack-plugin": "0.10.5",
@@ -56,11 +57,21 @@
     "webpack-dev-server": "3.4.1"
   },
   "dependencies": {
+    "@redux-offline/redux-offline": "2.5.1",
+    "axios": "0.18.0",
     "dotenv": "8.0.0",
+    "humps": "2.0.1",
     "lodash": "4.17.11",
+    "normalizr": "3.3.0",
+    "query-string": "6.5.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
+    "react-redux": "7.0.3",
     "react-router-dom": "5.0.0",
+    "redux": "4.0.1",
+    "redux-logger": "3.0.6",
+    "redux-persist": "5.10.0",
+    "redux-thunk": "2.3.0",
     "semantic-ui-css": "2.4.1",
     "semantic-ui-react": "0.87.1"
   }
