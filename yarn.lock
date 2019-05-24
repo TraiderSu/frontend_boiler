@@ -711,7 +711,7 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.4.3":
+"@babel/runtime@^7.3.1", "@babel/runtime@^7.4.3", "@babel/runtime@^7.4.4":
   version "7.4.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.5.tgz#582bb531f5f9dc67d2fcb682979894f75e253f12"
   integrity sha512-TuI4qpWZP6lGOGIuGWtp9sPluqYICmbk8T/1vpSysqJxRPkudh/ofFWyqdcMsDf2s7KvDL4/YHgKyvcS3g9CJQ==
@@ -3232,6 +3232,13 @@ fill-range@^4.0.0:
     is-number "^3.0.0"
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
+
+final-form@4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/final-form/-/final-form-4.13.0.tgz#ef2b36a850d6287cd968f328180590e5a64a57bb"
+  integrity sha512-JD/MPstXejGtQOryhbLHJoOtsvcCV37baoVuwK/+/mgbNir3QZjedhUJoSqgjwMxk/H1j/usdDwy7xfKMAq/dw==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
 
 finalhandler@~1.1.2:
   version "1.1.2"
@@ -6526,6 +6533,14 @@ react-dom@16.8.6:
     prop-types "^15.6.2"
     scheduler "^0.13.6"
 
+react-final-form@5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/react-final-form/-/react-final-form-5.1.2.tgz#e3fc04d14906d56387fa70e0f60f5a1cc0b2d983"
+  integrity sha512-p0OQeW3KGJ36DIN5hVVgzJbdTCfZxZrhcL+lXMRE/AJj4CziKM686LnaQAa+BsNZ2Ha265xp0UIfAZpqc85LuQ==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    ts-essentials "^2.0.2"
+
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
@@ -6909,15 +6924,15 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
+reselect@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.0.0.tgz#f2529830e5d3d0e021408b246a206ef4ea4437f7"
+  integrity sha512-qUgANli03jjAyGlnbYVAV5vvnOmJnODyABz51RdBN7M4WaVu8mecZWgyQNkG8Yqe3KRGRt0l4K4B3XVEULC4CA==
+
 reselect@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/reselect/-/reselect-3.0.1.tgz#efdaa98ea7451324d092b2b2163a6a1d7a9a2147"
   integrity sha1-79qpjqdFEyTQkrKyFjpqHXqaIUc=
-
-reselect@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.0.0.tgz#f2529830e5d3d0e021408b246a206ef4ea4437f7"
-  integrity sha512-qUgANli03jjAyGlnbYVAV5vvnOmJnODyABz51RdBN7M4WaVu8mecZWgyQNkG8Yqe3KRGRt0l4K4B3XVEULC4CA==
 
 resolve-cwd@^2.0.0:
   version "2.0.0"
@@ -7961,6 +7976,11 @@ tryer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/tryer/-/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
   integrity sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==
+
+ts-essentials@^2.0.2:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/ts-essentials/-/ts-essentials-2.0.7.tgz#f2bcc9d747289ffa8076727a7067f673f4e6d0f2"
+  integrity sha512-ptWcvcbgD7geud/+OVNPklmhpdsSZa7diUJk3ly/wJH2975h1ozzbGAyxH/kj3wjyZre08QE9lSfbLOZpngjaw==
 
 tslib@^1.9.0:
   version "1.9.3"

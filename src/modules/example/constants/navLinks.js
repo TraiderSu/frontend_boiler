@@ -1,5 +1,10 @@
 import * as Paths from './paths';
 
-const NavLinks = [{ title: 'Пример страницы', ...Paths.ExamplePage }];
+const ModuleLink = {
+  title: 'Example record list page',
+  ...Paths.ExampleRecordListPage
+};
 
-export { NavLinks };
+const NavLinks = [ModuleLink];
+
+export { NavLinks, ModuleLink };

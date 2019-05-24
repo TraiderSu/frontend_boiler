@@ -1,13 +1,14 @@
 import React from 'react';
 import * as Paths from './paths';
 
-const ExamplePage = React.lazy(() => import(/* webpackChunkName: 'ExamplePage' */ '../pages/ExamplePage'));
+const ExampleRecordListPage = React.lazy(() => import(/* webpackChunkName: 'ExampleRecordListPage' */ '../pages/ExampleRecordListPage')
+);
 
 const Routes = [
   {
-    ...Paths.ExamplePage,
+    ...Paths.ExampleRecordListPage,
     exact: true,
-    component: ExamplePage
+    component: ExampleRecordListPage
   }
 ];
 

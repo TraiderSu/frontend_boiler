@@ -1,3 +1,3 @@
-export const ExamplePage = {
+export const ExampleRecordListPage = {
   path: '/example'
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { EXAMPLE_RECORDS } from 'core/entitiesNames';
-import { NavLinks } from './constants/navLinks';
+import { NavLinks, ModuleLink } from './constants/navLinks';
 import * as Paths from './constants/paths';
 import { Routes } from './constants/routes';
 
@@ -26,8 +26,8 @@ export const exampleRecordsReducers = {
 };
 
 const ModuleName = 'exampleRecords';
-const ModulePath = Paths.ExamplePage.path;
+const ModulePath = Paths.ExampleRecordListPage.path;
 
 export {
-  Paths, NavLinks, Module, ModuleName, ModulePath
+  Paths, NavLinks, Module, ModuleName, ModulePath, ModuleLink
 };
