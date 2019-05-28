@@ -1,7 +1,8 @@
 import { get } from 'lodash';
+import queryString from 'query-string';
 
 export const getProps = (state, props) => props;
-export const getSearch = props => props.location.search.substring(1);
+export const getSearch = ({ location, valueControlParams }) => (valueControlParams ? queryString.stringify(valueControlParams) : location.search.substring(1));
 export const getPathname = props => props.location.pathname;
 export const getParam = (param, props) => props.match.params[param];
 export const getBackButtonLink = props => get(props.location.state, 'from', {});

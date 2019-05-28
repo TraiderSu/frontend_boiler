@@ -164,7 +164,7 @@ export const createListReducer = ([requestTypes, successTypes, failureTypes], op
   const total = (state = {}, action) => {
     if (successTypes.includes(action.type)) {
       const { query } = action.meta || {};
-      const { offset, ...rest } = query || {};
+      const { offset, limit, ...rest } = query || {};
       const key = queryString.stringify(rest);
 
       return mergeWithKey(state, key, action.payload.pagination && action.payload.pagination.total);
