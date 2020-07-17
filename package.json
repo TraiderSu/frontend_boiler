@@ -62,7 +62,7 @@
     "dotenv": "8.0.0",
     "final-form": "4.13.0",
     "humps": "2.0.1",
-    "lodash": "4.17.11",
+    "lodash": "4.17.19",
     "normalizr": "3.3.0",
     "query-string": "6.5.0",
     "react": "16.8.6",
