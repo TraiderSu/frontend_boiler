@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@redux-offline/redux-offline": "2.5.1",
-    "axios": "0.18.0",
+    "axios": "0.21.1",
     "dotenv": "8.0.0",
     "final-form": "4.13.0",
     "humps": "2.0.1",
